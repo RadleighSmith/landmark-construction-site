@@ -1,8 +1,70 @@
-{% extends 'website/base.html' %}
-
+{% extends "website/base.html" %}
+{% block title %}Home - Landmark Construction{% endblock %}
 {% block content %}
-<div class="container py-5">
-    <h1 class="text-center">Welcome to Landmark Construction</h1>
-    <p class="text-center">Proudly serving St. Petersburg, FL</p>
-</div>
+
+<!-- Hero Section -->
+<section class="position-relative text-white text-center" style="background: url('https://source.unsplash.com/1600x600/?construction') center/cover no-repeat; height: 600px;">
+  <div class="position-absolute top-0 bottom-0 start-0 end-0" style="background-color: rgba(13,27,42,0.7);"></div>
+  <div class="position-relative d-flex h-100 justify-content-center align-items-center flex-column">
+    <h1 class="display-4 fw-bold" data-aos="fade-down">Building Your Vision</h1>
+    <p class="lead" data-aos="fade-up" data-aos-delay="200">Trusted craftsmanship in St. Petersburg, FL</p>
+    <a href="{% url 'contact' %}" class="btn btn-warning mt-3" data-aos="fade-up" data-aos-delay="400">Get a Quote</a>
+  </div>
+</section>
+
+<!-- Intro Section -->
+<section class="container my-5">
+  <div class="row align-items-center">
+    <div class="col-md-6" data-aos="fade-right">
+      <h2>Why Choose Us?</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor velit quis justo ultricies, vel facilisis erat tincidunt.</p>
+    </div>
+    <div class="col-md-6" data-aos="fade-left">
+      <img src="https://source.unsplash.com/600x400/?builder" alt="Builder" class="img-fluid rounded">
+    </div>
+  </div>
+</section>
+
+<!-- Services Preview -->
+<section class="bg-light py-5">
+  <div class="container text-center">
+    <h2 class="mb-4" data-aos="fade-up">Our Services</h2>
+    <div class="row">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">Residential Construction</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">Commercial Projects</h5>
+            <p class="card-text">Suspendisse potenti. Vivamus ut augue nec urna ullamcorper.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">Renovations</h5>
+            <p class="card-text">Proin fermentum, felis at tincidunt gravida, velit magna.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="text-white text-center py-5" style="background-color: #0D1B2A;">
+  <div class="container" data-aos="fade-up">
+    <h2>Ready to start your next project?</h2>
+    <p class="lead">Contact us today for a free quote</p>
+    <a href="{% url 'contact' %}" class="btn btn-warning btn-lg mt-3">Contact Us</a>
+  </div>
+</section>
+
 {% endblock %}

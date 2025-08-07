@@ -1,3 +1,16 @@
 body {
-    font-family: 'Segoe UI', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3 {
+  color: #0D1B2A;
+}
+
+.btn-warning {
+  background-color: #FFD700;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #e6c200;
 }
